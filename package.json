@@ -1,0 +1,31 @@
+{
+  "name": "sort-xyz",
+  "version": "0.0.1",
+  "description": "Sort.xyz SDK",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "engines": {
+    "node": ">=16.1.0",
+    "npm": ">=7"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sortxyz/sort-node-sdk.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sortxyz/sort-node-sdk/issues"
+  },
+  "homepage": "https://sort.xyz",
+  "dependencies": {
+    "axios": "^0.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
