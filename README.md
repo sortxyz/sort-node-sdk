@@ -1,8 +1,4 @@
----
-description: Official Sort Javascript/Typescript Client
----
-
-# Node.js Client
+# Official Node.js Client for Sort.xyz
 
 ## Installation
 
