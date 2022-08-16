@@ -14,7 +14,7 @@ const { Sort }  = require('sort-xyz');
 // initialize Sort client using free api key from sort.xyz
 let sort = new Sort({ api_key: 'ce4c9316-f7ce-4955-b6b3-2292a8be7afa' });
 
-let result = await sort.query("select * from ethereum.transaction_log l where l.name = 'Nested' limit 10");
+let result = await sort.query("select * from ethereum_latest.transaction_log l where l.name = 'Nested' limit 10");
 ```
 
 ## Initialization
@@ -97,7 +97,7 @@ let result = await sort.contractEvents(
 ```javascript
 // send a SQL query to sort
 
-let result = await sort.query("select _id as hash, value_eth as amount, timestamp, t.function.params[1].value as punkId from ethereum.transaction t where t.to = '0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb' and t.function.name = 'buyPunk' order by timestamp desc limit 100");
+let result = await sort.query("select _id as hash, value_eth as amount, timestamp, t.function.params[1].value as punkId from ethereum_latest.transaction t where t.to = '0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb' and t.function.name = 'buyPunk' order by timestamp desc limit 100");
 ```
 
 | Parameter                                                                                                                                                                                                                                         | Default | Optional |
@@ -133,11 +133,9 @@ In the default namespace (ethereum\_latest), only transactions for the past 7 da
 
 ## Decoded transaction events / logs by hash
 
-{% code overflow="wrap" %}
 ```javascript
 let result = await sort.transactionEvents("0x32ef066346ed78ceac0f6fdb888adf44819856564b8268985c3f09a68c8c4ddb");
 ```
-{% endcode %}
 
 | Parameter                                                               | Default | Optional |
 | ----------------------------------------------------------------------- | ------- | -------- |

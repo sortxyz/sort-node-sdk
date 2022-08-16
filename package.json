@@ -1,6 +1,6 @@
 {
   "name": "sort-xyz",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Sort.xyz SDK",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -22,6 +22,7 @@
     "url": "https://github.com/sortxyz/sort-node-sdk/issues"
   },
   "homepage": "https://sort.xyz",
+  "keywords" : ["ethereum", "web3", "crypto", "dapp", "blockchain"],
   "dependencies": {
     "axios": "^0.25.0"
   },
