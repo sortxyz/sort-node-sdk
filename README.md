@@ -1,3 +1,10 @@
+# DEPRECATED
+
+⚠️   This package is no longer maintained. For new integrations, please visit https://docs.sort.xyz
+
+------
+
+
 # Official Node.js Client for Sort.xyz
 
 ## Installation
